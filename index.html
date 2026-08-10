@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Pradeepraj Durairaj | Biochemist & Researcher</title>
+
+    <meta name="description" content="Professional academic website of Dr. Pradeepraj Durairaj, a biochemist and researcher specializing in cytochrome P450 enzymes, drug metabolism, enzyme engineering and biocatalysis.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #243447;
+            background: #ffffff;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #e5e9ef;
+            padding: 16px 5%;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #123b5d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: #455a64;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1677a8;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #f4f9fc, #ffffff);
+            padding: 110px 5% 100px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.15;
+            color: #123b5d;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            font-weight: 400;
+            color: #1677a8;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            font-size: 18px;
+            color: #526574;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .button-primary {
+            background: #1677a8;
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #105b82;
+        }
+
+        .button-secondary {
+            border: 1px solid #1677a8;
+            color: #1677a8;
+        }
+
+        .button-secondary:hover {
+            background: #eef7fb;
+        }
+
+        /* General sections */
+        section {
+            padding: 85px 5%;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #123b5d;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            color: #647583;
+            margin-bottom: 40px;
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .profile-box {
+            background: #f5f9fc;
+            border-left: 4px solid #1677a8;
+            padding: 30px;
+            border-radius: 6px;
+        }
+
+        .profile-box h3 {
+            color: #123b5d;
+            margin-bottom: 15px;
+        }
+
+        .profile-box p {
+            margin-bottom: 10px;
+        }
+
+        /* Research */
+        .research-section {
+            background: #f7fafc;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .research-card {
+            background: white;
+            padding: 30px;
+            border: 1px solid #e3eaf0;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+        }
+
+        .research-card h3 {
+            color: #123b5d;
+            margin-bottom: 12px;
+        }
+
+        .research-card p {
+            color: #647583;
+            font-size: 15px;
+        }
+
+        /* Publications */
+        .publication {
+            padding: 24px 0;
+            border-bottom: 1px solid #e5e9ef;
+        }
+
+        .publication h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .publication p {
+            color: #647583;
+        }
+
+        /* Awards */
+        .timeline {
+            border-left: 3px solid #1677a8;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item .year {
+            color: #1677a8;
+            font-weight: bold;
+        }
+
+        .timeline-item h3 {
+            color: #123b5d;
+            margin: 5px 0;
+        }
+
+        /* Contact */
+        .contact-section {
+            background: #f4f9fc;
+        }
+
+        .contact-box {
+            max-width: 800px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .contact-link {
+            padding: 12px 20px;
+            background: white;
+            border: 1px solid #dce5eb;
+            border-radius: 6px;
+            color: #1677a8;
+        }
+
+        /* Footer */
+        footer {
+            background: #123b5d;
+            color: #dce8ef;
+            text-align: center;
+            padding: 30px 5%;
+            font-size: 14px;
+        }
+
+        /* Mobile */
+        @media (max-width: 850px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 80px 5%;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">PRADEEPRAJ DURAIRAJ</div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Hero -->
+<header class="hero">
+    <div class="hero-container">
+
+        <h1>Dr. Pradeepraj Durairaj</h1>
+
+        <h2>
+            Biochemist | Enzyme Engineering | Drug Metabolism | Biocatalysis
+        </h2>
+
+        <p>
+            Researcher with international academic and research experience,
+            working at the intersection of biochemistry, enzyme engineering,
+            drug metabolism and translational biotechnology.
+        </p>
+
+        <div class="buttons">
+            <a href="#research" class="button button-primary">
+                Explore My Research
+            </a>
+
+            <a href="#contact" class="button button-secondary">
+                Get in Touch
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- About -->
+<section id="about">
+    <div class="section-container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am a biochemist and researcher with a Ph.D. in Biochemistry
+                    from Yeungnam University, South Korea, supported by the
+                    Global Korea Scholarship.
+                </p>
+
+                <p>
+                    My research experience spans India, South Korea, China and
+                    the United States, with a strong focus on enzymes, drug
+                    metabolism, enzyme engineering and biocatalysis.
+                </p>
+
+                <p>
+                    My work has particularly focused on cytochrome P450 enzymes,
+                    enzyme-mediated drug metabolism and innovative approaches
+                    for studying biochemical transformations.
+                </p>
+
+                <p>
+                    I am also interested in translational biotechnology,
+                    interdisciplinary research and the development of
+                    technologies that connect fundamental biochemical research
+                    with pharmaceutical and biomedical applications.
+                </p>
+
+            </div>
+
+            <div class="profile-box">
+
+                <h3>Research Profile</h3>
+
+                <p><strong>Field:</strong> Biochemistry & Biotechnology</p>
+
+                <p><strong>Research:</strong> Enzymes, Drug Metabolism & Biocatalysis</p>
+
+                <p><strong>Specialization:</strong> Cytochrome P450</p>
+
+                <p><strong>Experience:</strong> International Research & Academia</p>
+
+                <p><strong>Focus:</strong> Translational & Interdisciplinary Research</p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Research -->
+<section id="research" class="research-section">
+    <div class="section-container">
+
+        <h2 class="section-title">Research</h2>
+
+        <p class="section-intro">
+            My research interests span enzyme biology, drug metabolism,
+            enzyme engineering and translational biotechnology.
+        </p>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+                <h3>Cytochrome P450</h3>
+                <p>
+                    Investigating cytochrome P450 enzymes and their roles in
+                    drug metabolism, biological function and human health.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Drug Metabolism</h3>
+                <p>
+                    Studying enzyme-mediated drug metabolism and approaches
+                    for understanding enzyme-substrate interactions.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Enzyme Engineering</h3>
+                <p>
+                    Developing and applying enzyme engineering strategies
+                    for biochemical and pharmaceutical applications.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Biocatalysis</h3>
+                <p>
+                    Exploring enzymes as powerful catalysts for sustainable
+                    biochemical transformation and biotechnology.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Enzyme-Bag Platform</h3>
+                <p>
+                    Developing innovative enzyme-based platforms for CYP
+                    biotransformation and high-throughput drug metabolism
+                    screening.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Translational Biotechnology</h3>
+                <p>
+                    Connecting fundamental biochemical research with
+                    pharmaceutical, biomedical and translational applications.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Publications -->
+<section id="publications">
+    <div class="section-container">
+
+        <h2 class="section-title">Selected Publications</h2>
+
+        <p class="section-intro">
+            Selected research contributions, reviews and book chapters.
+            A complete publication list will be added here.
+        </p>
+
+        <div class="publication">
+
+            <h3>
+                Enzyme-Bag Platform for CYP Biotransformation and
+                High-Throughput Drug Metabolism Screening
+            </h3>
+
+            <p>
+                Book chapter | Springer Nature | 2026
+            </p>
+
+        </div>
+
+        <div class="publication">
+
+            <h3>
+                Brain Cytochrome P450: Navigating Neurological Health
+                and Metabolic Regulation
+            </h3>
+
+            <p>
+                Scientific contribution in the field of cerebral
+                cytochrome P450 biology and drug metabolism.
+            </p>
+
+        </div>
+
+        <p style="margin-top: 30px;">
+            <strong>More publications will be added soon.</strong>
+        </p>
+
+    </div>
+</section>
+
+
+<!-- Awards -->
+<section id="awards" class="research-section">
+    <div class="section-container">
+
+        <h2 class="section-title">Awards & Recognition</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="year">2023</div>
+                <h3>Young Researcher Award</h3>
+                <p>
+                    Recognition for research contributions in the field
+                    of biochemical and biomedical sciences.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2020</div>
+                <h3>Outstanding Foreign Postdoctoral Award</h3>
+                <p>
+                    Recognition for postdoctoral research excellence.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2019</div>
+                <h3>High-Level Foreign Talent Certification</h3>
+                <p>
+                    Recognition under an international talent program.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2018</div>
+                <h3>Foreign Young Talent Award</h3>
+                <p>
+                    International recognition for research talent and
+                    scientific contribution.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Teaching -->
+<section id="teaching">
+    <div class="section-container">
+
+        <h2 class="section-title">Teaching & Mentoring</h2>
+
+        <p class="section-intro">
+            I am committed to research-driven, student-centered teaching
+            and mentoring that connects fundamental concepts with
+            real-world scientific applications.
+        </p>
+
+        <div class="about-grid">
+
+            <div>
+                <h3 style="color:#123b5d; margin-bottom:15px;">
+                    Teaching Interests
+                </h3>
+
+                <p>
+                    Biochemistry, molecular biology, enzyme technology,
+                    drug metabolism, biotechnology and related areas.
+                </p>
+            </div>
+
+            <div>
+                <h3 style="color:#123b5d; margin-bottom:15px;">
+                    Mentoring
+                </h3>
+
+                <p>
+                    Experience mentoring undergraduate, graduate and
+                    doctoral researchers in interdisciplinary research
+                    environments.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Editorial -->
+<section id="editorial" class="research-section">
+    <div class="section-container">
+
+        <h2 class="section-title">Editorial & Academic Service</h2>
+
+        <p class="section-intro">
+            Academic service activities including manuscript reviewing,
+            editorial activities and contributions to the scientific
+            publishing community.
+        </p>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+                <h3>Peer Review</h3>
+                <p>
+                    Reviewer for scientific journals in biochemistry,
+                    biotechnology and related disciplines.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Editorial Activities</h3>
+                <p>
+                    Contributing to scientific publishing and editorial
+                    initiatives in the life sciences.
+                </p>
+            </div>
+
+            <div class="research-card">
+                <h3>Scientific Communication</h3>
+                <p>
+                    Supporting clear and rigorous communication of
+                    interdisciplinary scientific research.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+    <div class="section-container">
+
+        <div class="contact-box">
+
+            <h2 class="section-title">Contact</h2>
+
+            <p>
+                I welcome opportunities for academic collaboration,
+                research discussions, teaching, scientific publishing
+                and interdisciplinary projects.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="#" class="contact-link">
+                    Email
+                </a>
+
+                <a href="#" class="contact-link">
+                    LinkedIn
+                </a>
+
+                <a href="#" class="contact-link">
+                    Google Scholar
+                </a>
+
+                <a href="#" class="contact-link">
+                    ORCID
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>
+        © 2026 Dr. Pradeepraj Durairaj. All rights reserved.
+    </p>
+
+    <p>
+        Academic & Professional Website
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,159 +1,694 @@
-Dr. Pradeepraj Durairaj
-About
-Research
-Publications
-Awards
-Teaching
-Editorial
-Contact
-Biochemistry • Drug Metabolism • Enzyme Engineering
-Dr. Pradeepraj Durairaj
-Biochemist | Research Scientist | Enzyme Engineering & Translational Biotechnology
-I am a biochemist and research scientist with international academic and research experience spanning India, South Korea, China and the United States. My work focuses on cytochrome P450 enzymes, drug metabolism, enzyme engineering, biocatalysis and emerging technologies for biomedical research.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional academic website of Dr. Pradeepraj Durairaj, biochemist and research scientist specializing in cytochrome P450 enzymes, drug metabolism, enzyme engineering and biocatalysis.">
+  <title>Dr. Pradeepraj Durairaj | Biochemist & Research Scientist</title>
 
-Explore My Research
-Get in Touch
-Professional photograph
+  <style>
+    :root {
+      --navy: #12304a;
+      --blue: #1769aa;
+      --teal: #197c83;
+      --light: #f5f8fb;
+      --text: #26343d;
+      --muted: #64727c;
+      --white: #ffffff;
+      --border: #dfe7ec;
+      --shadow: 0 12px 35px rgba(18, 48, 74, 0.08);
+      --radius: 16px;
+    }
 
-This space can be replaced with your photograph.
-About
-Research-driven and internationally experienced
-A concise overview of my academic background, research interests and professional experience.
+    * { box-sizing: border-box; scroll-behavior: smooth; }
 
-I hold a Ph.D. in Biochemistry from Yeungnam University, South Korea, completed under the Global Korea Scholarship. My research career has included academic and scientific experience across multiple international research environments.
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--white);
+    }
 
-My scientific interests are centered on understanding and engineering enzymes for applications in drug discovery, metabolism and biotechnology. A major focus of my work has been the cytochrome P450 enzyme system and its potential for studying human drug metabolism and developing biocatalytic platforms.
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-I am also interested in interdisciplinary approaches that connect biochemical research with microfluidics, membrane proteins, extracellular vesicles and emerging computational and AI-enabled biomedical technologies.
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
 
-Core Expertise
-Cytochrome P450 enzymes
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
 
-Drug metabolism & biotransformation
+    .nav-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-Enzyme engineering & biocatalysis
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      white-space: nowrap;
+    }
 
-Membrane proteins
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-Microfluidics & organ-on-chip systems
+    .nav-links a {
+      color: var(--text);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
 
-Extracellular vesicles
+    .nav-links a:hover { color: var(--blue); text-decoration: none; }
 
-Translational biotechnology
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(25,124,131,0.14), transparent 28%),
+        linear-gradient(135deg, #f7fbfd 0%, #eef5f9 100%);
+      padding: 100px 0 90px;
+    }
 
-Research
-Scientific interests
-My research brings together enzymology, biotechnology and translational biomedical science.
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.55fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
 
-🧬
-Cytochrome P450
-Investigating CYP enzymes and their roles in human metabolism, drug interactions and biomedical applications.
+    .eyebrow {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
 
-💊
-Drug Metabolism
-Developing approaches for understanding enzymatic drug metabolism and improving high-throughput screening strategies.
+    h1 {
+      color: var(--navy);
+      font-size: clamp(2.5rem, 6vw, 4.6rem);
+      line-height: 1.08;
+      margin: 0 0 18px;
+    }
 
-⚗️
-Enzyme Engineering
-Engineering and applying enzymes for pharmaceutical development, biocatalysis and metabolic studies.
+    .hero h2 {
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0 0 22px;
+    }
 
-🔬
-Enzyme-Bag Technology
-Developing enzyme-based platforms for CYP biotransformation and high-throughput drug metabolism screening.
+    .hero p {
+      max-width: 720px;
+      font-size: 1.08rem;
+      color: #43535e;
+    }
 
-🧫
-Microfluidics & Organ-on-Chip
-Exploring microfluidic technologies and advanced biological models for translational biomedical research.
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
 
-🤖
-AI-Enabled Biomedical Research
-Interested in interdisciplinary applications of AI, machine learning and computational methods in biomedical science.
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      border: 1px solid var(--blue);
+      transition: 0.2s ease;
+    }
 
-Publications
-Selected research and scholarly work
-My publications cover enzyme science, cytochrome P450 biology, drug metabolism and biotechnology.
+    .button.primary {
+      background: var(--blue);
+      color: white;
+    }
 
-Recent book chapter
-Enzyme-Bag Platform for CYP Biotransformation and High-Throughput Drug Metabolism Screening. In: Targeting Enzymes for Pharmaceutical Development. Springer Nature, 2026.
+    .button.secondary {
+      background: white;
+      color: var(--blue);
+    }
 
-This chapter was authored as a single-author contribution and presents an enzyme-bag platform for CYP biotransformation and high-throughput drug metabolism studies.
+    .button:hover {
+      transform: translateY(-2px);
+      text-decoration: none;
+      box-shadow: 0 7px 18px rgba(23,105,170,0.16);
+    }
 
+    .profile-placeholder {
+      width: min(300px, 100%);
+      aspect-ratio: 1;
+      margin: auto;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #dcebf3, #ffffff);
+      border: 8px solid white;
+      box-shadow: var(--shadow);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 35px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-Publication profile
-More than 25 peer-reviewed publications with over 725 citations, spanning biochemistry, enzyme technology, drug metabolism and related biomedical research.
+    section { padding: 85px 0; }
+    section:nth-of-type(even) { background: var(--light); }
 
-A complete publication list with DOI, journal and external profile links can be added here.
+    .section-title {
+      margin-bottom: 42px;
+    }
 
-Awards & Recognition
-Selected honors
-Young Researcher Award
-Indian National Science Academy (INSc), India, 2023
-Outstanding Foreign Postdoctoral Award
-Shandong University, China, 2020
-High-Level Foreign Talent Certification
-Shandong Administration of Foreign Experts Affairs, China, 2019
-Foreign Young Talent Award
-State Administration of Foreign Experts Affairs, China, 2018
-Global Korea Scholarship
-Ph.D. scholarship, South Korea
-Teaching & Mentoring
-Supporting the next generation of scientists
-My teaching approach combines scientific depth with student-centered and research-driven learning.
+    .section-title span {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
 
-I have experience teaching, mentoring and supporting students in multidisciplinary research environments. I aim to create an interactive learning environment in which students can connect fundamental biochemical concepts with real research problems.
+    .section-title h2 {
+      margin: 7px 0 8px;
+      color: var(--navy);
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
 
-I am particularly interested in teaching subjects related to biochemistry, molecular biology, enzymology, drug metabolism and biotechnology.
+    .section-title p {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+    }
 
-Proposed Course
-Engineering Drug Metabolism
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 45px;
+    }
 
-A research-oriented course exploring cytochrome P450 enzymes, UGTs, drug metabolism, enzyme engineering and applications in pharmaceutical development.
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
 
-Editorial & Scholarly Service
-Contributing to the scientific community
-In addition to research and teaching, I contribute to scholarly communication through peer review, editorial activities and scientific publishing.
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 25px;
+      box-shadow: var(--shadow);
+    }
 
-Peer Review
-Reviewer for journals from major academic publishers and scientific societies.
+    .card h3 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
 
-Editorial Activities
-Engaged with editorial opportunities and activities in biochemistry, biotechnology and related biomedical fields.
+    .card p { color: var(--muted); }
 
-Scientific Publishing
-Author of peer-reviewed research articles, reviews and book chapters in enzyme and biomedical research.
+    .research-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
 
-Professional Journey
-International research experience
-United States
-Academic & Research Experience
-Research experience in biomedical and biochemical research environments, including FAMU-FSU College of Engineering and Florida State University.
+    .timeline {
+      border-left: 3px solid #cfe0ea;
+      padding-left: 25px;
+    }
 
-China
-International Research Experience
-Research and postdoctoral experience in Chinese academic and research institutions, including Shandong University and Tianjin University.
+    .timeline-item {
+      margin-bottom: 28px;
+      position: relative;
+    }
 
-South Korea
-Ph.D. in Biochemistry
-Doctoral research at Yeungnam University under the Global Korea Scholarship.
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: 7px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--teal);
+      border: 3px solid white;
+    }
 
-India
-Early Academic & Research Training
-Academic and scientific training that formed the foundation for an international research career.
+    .timeline-item h3 { margin: 0; color: var(--navy); }
+    .timeline-item .date { color: var(--teal); font-weight: 700; font-size: 0.9rem; }
 
-Contact
-Let's connect
-I welcome opportunities for research collaboration, academic positions, scientific publishing, teaching and interdisciplinary projects.
+    .publication-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
 
-Professional Profiles
-Google Scholar
+    .publication-box h3 { color: var(--navy); margin-top: 0; }
 
-ORCID
+    .publication-note {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
 
-LinkedIn
+    .award-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
 
-Email
-Add your preferred professional email address here.
+    .award {
+      padding: 22px;
+      border-left: 4px solid var(--teal);
+      background: white;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
 
-A CV download link can also be added here.
+    .award strong {
+      display: block;
+      color: var(--navy);
+    }
 
-© 2026 Dr. Pradeepraj Durairaj. Academic & Professional Website.
+    .contact {
+      background: var(--navy);
+      color: white;
+    }
+
+    .contact .section-title h2,
+    .contact .section-title p,
+    .contact .section-title span { color: white; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .contact-card {
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius);
+      padding: 25px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .contact-card h3 { margin-top: 0; }
+    .contact-card a { color: #b9e5ea; }
+
+    footer {
+      background: #0c2234;
+      color: #b8c6cf;
+      text-align: center;
+      padding: 24px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr 1fr; }
+      .profile-placeholder { max-width: 240px; }
+      .nav-inner { padding: 12px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { justify-content: flex-start; gap: 12px 16px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 70px 0; }
+      section { padding: 65px 0; }
+      .card-grid, .award-list { grid-template-columns: 1fr; }
+      .hero p { font-size: 1rem; }
+      .section-title h2 { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand">Dr. Pradeepraj Durairaj</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#editorial">Editorial</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Biochemistry • Drug Metabolism • Enzyme Engineering</div>
+        <h1>Dr. Pradeepraj Durairaj</h1>
+        <h2>Biochemist | Research Scientist | Enzyme Engineering & Translational Biotechnology</h2>
+        <p>
+          I am a biochemist and research scientist with international academic and research
+          experience spanning India, South Korea, China and the United States. My work focuses
+          on cytochrome P450 enzymes, drug metabolism, enzyme engineering, biocatalysis and
+          emerging technologies for biomedical research.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="#research">Explore My Research</a>
+          <a class="button secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="profile-placeholder">
+          <div>
+            <strong>Professional photograph</strong><br><br>
+            This space can be replaced with your photograph.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <span>About</span>
+        <h2>Research-driven and internationally experienced</h2>
+        <p>
+          A concise overview of my academic background, research interests and professional experience.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I hold a Ph.D. in Biochemistry from Yeungnam University, South Korea, completed
+            under the Global Korea Scholarship. My research career has included academic and
+            scientific experience across multiple international research environments.
+          </p>
+          <p>
+            My scientific interests are centered on understanding and engineering enzymes for
+            applications in drug discovery, metabolism and biotechnology. A major focus of my
+            work has been the cytochrome P450 enzyme system and its potential for studying
+            human drug metabolism and developing biocatalytic platforms.
+          </p>
+          <p>
+            I am also interested in interdisciplinary approaches that connect biochemical
+            research with microfluidics, membrane proteins, extracellular vesicles and
+            emerging computational and AI-enabled biomedical technologies.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Core Expertise</h3>
+          <p>Cytochrome P450 enzymes</p>
+          <p>Drug metabolism & biotransformation</p>
+          <p>Enzyme engineering & biocatalysis</p>
+          <p>Membrane proteins</p>
+          <p>Microfluidics & organ-on-chip systems</p>
+          <p>Extracellular vesicles</p>
+          <p>Translational biotechnology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="container">
+      <div class="section-title">
+        <span>Research</span>
+        <h2>Scientific interests</h2>
+        <p>
+          My research brings together enzymology, biotechnology and translational biomedical science.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="research-icon">🧬</div>
+          <h3>Cytochrome P450</h3>
+          <p>Investigating CYP enzymes and their roles in human metabolism, drug interactions and biomedical applications.</p>
+        </div>
+
+        <div class="card">
+          <div class="research-icon">💊</div>
+          <h3>Drug Metabolism</h3>
+          <p>Developing approaches for understanding enzymatic drug metabolism and improving high-throughput screening strategies.</p>
+        </div>
+
+        <div class="card">
+          <div class="research-icon">⚗️</div>
+          <h3>Enzyme Engineering</h3>
+          <p>Engineering and applying enzymes for pharmaceutical development, biocatalysis and metabolic studies.</p>
+        </div>
+
+        <div class="card">
+          <div class="research-icon">🔬</div>
+          <h3>Enzyme-Bag Technology</h3>
+          <p>Developing enzyme-based platforms for CYP biotransformation and high-throughput drug metabolism screening.</p>
+        </div>
+
+        <div class="card">
+          <div class="research-icon">🧫</div>
+          <h3>Microfluidics & Organ-on-Chip</h3>
+          <p>Exploring microfluidic technologies and advanced biological models for translational biomedical research.</p>
+        </div>
+
+        <div class="card">
+          <div class="research-icon">🤖</div>
+          <h3>AI-Enabled Biomedical Research</h3>
+          <p>Interested in interdisciplinary applications of AI, machine learning and computational methods in biomedical science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <div class="section-title">
+        <span>Publications</span>
+        <h2>Selected research and scholarly work</h2>
+        <p>
+          My publications cover enzyme science, cytochrome P450 biology, drug metabolism and biotechnology.
+        </p>
+      </div>
+
+      <div class="publication-box">
+        <h3>Recent book chapter</h3>
+        <p>
+          <strong>Enzyme-Bag Platform for CYP Biotransformation and High-Throughput Drug Metabolism Screening.</strong>
+          In: <em>Targeting Enzymes for Pharmaceutical Development</em>. Springer Nature, 2026.
+        </p>
+        <p class="publication-note">
+          This chapter was authored as a single-author contribution and presents an enzyme-bag
+          platform for CYP biotransformation and high-throughput drug metabolism studies.
+        </p>
+      </div>
+
+      <br>
+
+      <div class="publication-box">
+        <h3>Publication profile</h3>
+        <p>
+          More than 25 peer-reviewed publications with over 725 citations, spanning
+          biochemistry, enzyme technology, drug metabolism and related biomedical research.
+        </p>
+        <p class="publication-note">
+          A complete publication list with DOI, journal and external profile links can be added here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="container">
+      <div class="section-title">
+        <span>Awards & Recognition</span>
+        <h2>Selected honors</h2>
+      </div>
+
+      <div class="award-list">
+        <div class="award">
+          <strong>Young Researcher Award</strong>
+          Indian National Science Academy (INSc), India, 2023
+        </div>
+
+        <div class="award">
+          <strong>Outstanding Foreign Postdoctoral Award</strong>
+          Shandong University, China, 2020
+        </div>
+
+        <div class="award">
+          <strong>High-Level Foreign Talent Certification</strong>
+          Shandong Administration of Foreign Experts Affairs, China, 2019
+        </div>
+
+        <div class="award">
+          <strong>Foreign Young Talent Award</strong>
+          State Administration of Foreign Experts Affairs, China, 2018
+        </div>
+
+        <div class="award">
+          <strong>Global Korea Scholarship</strong>
+          Ph.D. scholarship, South Korea
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="container">
+      <div class="section-title">
+        <span>Teaching & Mentoring</span>
+        <h2>Supporting the next generation of scientists</h2>
+        <p>
+          My teaching approach combines scientific depth with student-centered and research-driven learning.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I have experience teaching, mentoring and supporting students in multidisciplinary
+            research environments. I aim to create an interactive learning environment in which
+            students can connect fundamental biochemical concepts with real research problems.
+          </p>
+          <p>
+            I am particularly interested in teaching subjects related to biochemistry, molecular
+            biology, enzymology, drug metabolism and biotechnology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Proposed Course</h3>
+          <p><strong>Engineering Drug Metabolism</strong></p>
+          <p>
+            A research-oriented course exploring cytochrome P450 enzymes, UGTs, drug metabolism,
+            enzyme engineering and applications in pharmaceutical development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="editorial">
+    <div class="container">
+      <div class="section-title">
+        <span>Editorial & Scholarly Service</span>
+        <h2>Contributing to the scientific community</h2>
+        <p>
+          In addition to research and teaching, I contribute to scholarly communication through
+          peer review, editorial activities and scientific publishing.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Peer Review</h3>
+          <p>Reviewer for journals from major academic publishers and scientific societies.</p>
+        </div>
+
+        <div class="card">
+          <h3>Editorial Activities</h3>
+          <p>Engaged with editorial opportunities and activities in biochemistry, biotechnology and related biomedical fields.</p>
+        </div>
+
+        <div class="card">
+          <h3>Scientific Publishing</h3>
+          <p>Author of peer-reviewed research articles, reviews and book chapters in enzyme and biomedical research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span>Professional Journey</span>
+        <h2>International research experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="date">United States</div>
+          <h3>Academic & Research Experience</h3>
+          <p>Research experience in biomedical and biochemical research environments, including FAMU-FSU College of Engineering and Florida State University.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">China</div>
+          <h3>International Research Experience</h3>
+          <p>Research and postdoctoral experience in Chinese academic and research institutions, including Shandong University and Tianjin University.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">South Korea</div>
+          <h3>Ph.D. in Biochemistry</h3>
+          <p>Doctoral research at Yeungnam University under the Global Korea Scholarship.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="date">India</div>
+          <h3>Early Academic & Research Training</h3>
+          <p>Academic and scientific training that formed the foundation for an international research career.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <span>Contact</span>
+        <h2>Let's connect</h2>
+        <p>
+          I welcome opportunities for research collaboration, academic positions, scientific
+          publishing, teaching and interdisciplinary projects.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Professional Profiles</h3>
+          <p><a href="#" target="_blank">Google Scholar</a></p>
+          <p><a href="#" target="_blank">ORCID</a></p>
+          <p><a href="#" target="_blank">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>
+            Add your preferred professional email address here.
+          </p>
+          <p>
+            A CV download link can also be added here.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Dr. Pradeepraj Durairaj. Academic & Professional Website.
+    </div>
+  </footer>
+
+</body>
+</html>
